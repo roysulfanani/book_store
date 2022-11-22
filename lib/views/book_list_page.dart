@@ -75,7 +75,12 @@ class _BookListPageState extends State<BookListPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(currentBook.title!),
+                                Text(
+                                  currentBook.title!,
+                                  style: TextStyle(
+                                      // fontFamily: 'Titillium Web',
+                                      ),
+                                ),
                                 Text(currentBook.subtitle!),
                                 Align(
                                     alignment: Alignment.topRight,
